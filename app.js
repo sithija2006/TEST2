@@ -1,12 +1,11 @@
-// Import Firebase
-import firebase from "firebase/app"
-import "firebase/auth"
-import "firebase/database"
+// Declare the firebase variable
+const firebase = window.firebase
 
-// Firebase Configuration (IMPORTANT: Replace with your Firebase config)
+// Firebase Configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBP-3uuExD9_zmOHyBdamjCNOaxXkhQKNo",
   authDomain: "whatsapp-8a128.firebaseapp.com",
+  databaseURL: "https://whatsapp-8a128-default-rtdb.firebaseio.com",
   projectId: "whatsapp-8a128",
   storageBucket: "whatsapp-8a128.firebasestorage.app",
   messagingSenderId: "276452175533",
@@ -14,7 +13,6 @@ const firebaseConfig = {
   measurementId: "G-JXFZ6H435V",
 }
 
-// Initialize Firebase (using script tags in production)
 firebase.initializeApp(firebaseConfig)
 const auth = firebase.auth()
 const database = firebase.database()
