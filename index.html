@@ -30,19 +30,18 @@
                     <input type="email" id="login-email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <input type="password" id="login-password" placeholder="Password" required>
+                    <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>
             
             <!-- Register Form -->
             <form id="register-form" class="auth-form">
-                <!-- Removing display name field - only email will be used -->
                 <div class="form-group">
                     <input type="email" id="register-email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <input type="password" id="register-password" placeholder="Password" required>
+                    <input type="password" id="register-password" placeholder="Password" autocomplete="new-password" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Register</button>
             </form>
@@ -193,6 +192,6 @@
     </div>
 
     <!-- Firebase SDK -->
-    <script type="module" src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
